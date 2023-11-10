@@ -1,11 +1,14 @@
-<div *ngFor="let character of characters">
-  <app-character
-    name="{{ character.name }}"
-    image="{{ character.image }}"
-    status="{{ character.status }}"
-    species="{{ character.species}}"
-    created="{{ character.created }}"
-    gender="{{ character.gender }}"
-    >
-  </app-character>
+<div class="container characters">
+  <div *ngFor="let character of characters">
+    <app-character
+      name="{{ character.name }}"
+      image="{{ character.image }}"
+      status="{{ character.status }}"
+      species="{{ character.species}}"
+      created="{{ character.created }}"
+      gender="{{ character.gender }}"
+      >
+    </app-character>
+  </div>
 </div>
+
