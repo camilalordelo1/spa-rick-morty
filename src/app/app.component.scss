@@ -1,0 +1,6 @@
+@import './styles/variables.scss';
+
+.app {
+  background: $primary-color;
+  background: radial-gradient(circle, $primary-color 16%, $secondary-color 31%, $tertiary-color 49%, $secondary-color 65%, $primary-color 88%);
+}
