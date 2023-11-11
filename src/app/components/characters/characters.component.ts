@@ -18,4 +18,8 @@ export class CharactersComponent implements OnInit {
       this.characters = data.results;
     });
   }
+
+  search(event: any): void {
+
+  }
 }
