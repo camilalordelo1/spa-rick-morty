@@ -1,4 +1,17 @@
-<div class="app">
-  <h1 class="text-center py-3 text-white"> Rick & Morty </h1>
-  <app-characters></app-characters>
+<div class="app row mw-100 mh-100 h-100 w-100">
+  <div class="col-2">
+    <div class="nav flex-column nav-pills">
+      <a href="">Character</a>
+      <a href="">Location</a>
+      <a href="">Episode</a>
+    </div>
+  </div>
+  <div class="h-100 container body col-10 d-flex justify-content-between flex-column bd-highlight">
+    <div class="d-flex bd-highlight flex-column justify-content-center h-100">
+      <h1> Character </h1>
+    </div>
+    <div>
+      <app-characters></app-characters>
+    </div>
+  </div>
 </div>
