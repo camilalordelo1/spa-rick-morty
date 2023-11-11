@@ -1,0 +1,7 @@
+@import './app/styles/variables.scss';
+
+$font-family-base: 'Roboto', sans-serif;
+
+html, body {
+  font-family: $font-family-base !important;
+}

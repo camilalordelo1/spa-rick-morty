@@ -6,10 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./character.component.scss']
 })
 export class CharacterComponent   {
+  @Input() id:string = '';
   @Input() image:string = '';
   @Input() name:string = '';
   @Input() status:string = '';
   @Input() species:string = '';
-  @Input() gender:string = '';
-  @Input() created:string = '';
+  // @Input() gender:string = '';
+  // @Input() created:string = '';
 }

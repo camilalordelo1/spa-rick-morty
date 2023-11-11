@@ -1,14 +1,21 @@
-<div class="container characters">
-  <div *ngFor="let character of characters">
-    <app-character
-      name="{{ character.name }}"
-      image="{{ character.image }}"
-      status="{{ character.status }}"
-      species="{{ character.species}}"
-      created="{{ character.created }}"
-      gender="{{ character.gender }}"
-      >
-    </app-character>
-  </div>
+<div class="table-responsive">
+  <table class="table table-hover ">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">Species</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let character of characters">
+        <th scope="row"> {{ character.id }} </th>
+        <td> <img src="{{character.image}}" alt=""> {{ character.name }} </td>
+        <td> {{ character.status }} </td>
+        <td> {{ character.species }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
