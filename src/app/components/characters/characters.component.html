@@ -1,10 +1,13 @@
-<div class="mb-3 row">
-  <label for="table-complete-search" class="col-xs-3 col-sm-auto col-form-label">Full text search:</label>
-  <input
-    type="text"
-    class="form-control"
-    name="searchTerm"
-    (change)="search($event)"/>
+<div class="mb-3 mx-3 row">
+  <form class="w-50">
+    <label for="table-complete-search" class="col-xs-3 col-sm-auto col-form-label">Full text search:</label>
+    <input
+      type="text"
+      class="form-control"
+      name="searchTerm"
+      placeholder="Search"
+      (input)="search($event)"/>
+  </form>
 </div>
 
 <div class="characters mx-4 table-responsive">
