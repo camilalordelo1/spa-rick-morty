@@ -2,17 +2,14 @@
   <div class="col-2 bg-dark">
     <h3 class="text-center mt-5">Dashboard</h3>
       <nav class="mt-5 mx-4 flex-column text-white">
-          <a class="nav-link mb-3" href="/character">Character</a>
-          <a class="nav-link mb-3" href="/location">Location</a>
-          <a class="nav-link mb-3" href="/episode">Episode</a>
+          <a class="nav-link mb-3" routerLink="/characters">Character</a>
+          <a class="nav-link mb-3" routerLink="/location">Location</a>
+          <a class="nav-link mb-3" routerLink="/episode">Episode</a>
       </nav>
   </div>
-  <div class="h-100 mw-100 px-5 container col-10 d-flex justify-content-between flex-column">
-    <div class="d-flex flex-column justify-content-center h-100">
-      <h1> Character </h1>
-    </div>
-    <div>
-      <app-characters></app-characters>
+  <div class="mh-100 mw-100 px-5 container col-10 d-flex justify-content-between flex-column">
+    <div class="d-flex flex-column justify-content-center mh-100">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

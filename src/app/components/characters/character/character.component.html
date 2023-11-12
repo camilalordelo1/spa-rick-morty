@@ -1,3 +1,18 @@
-{{ id }} {{ name }} {{ status }} {{ species }}
-
-
+<div class="character">
+  <p>ID:{{ character.id }}  </p>
+  <p>Name: {{ character.name }}</p>
+  <p>Status: {{ character.status }} </p>
+  <p>Species: {{ character.species }} </p>
+  <p>Type: {{ character.type }} </p>
+  <p>Gender: {{ character.gender }} </p>
+  <p>Origin name: {{ character.origin.name }} </p>
+  <p>Origin URL: {{ character.origin.url }} </p>
+  <p>Location name: {{ character.location.name }} </p>
+  <p>Location URL: {{ character.location.url }} </p>
+  <p>Image: {{character.image}}</p>
+  <div *ngFor=" let episodes  of character.episode">
+    <p> {{episodes}}</p>
+  </div>
+  <p>URL: {{character.url}}</p>
+  <p>Created: {{character.created}}</p>
+</div>

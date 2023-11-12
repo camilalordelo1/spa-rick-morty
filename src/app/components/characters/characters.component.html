@@ -1,3 +1,4 @@
+<h1> Character </h1>
 <div class="mb-3 mx-3 row">
   <form class="w-50">
     <label for="table-complete-search" class="col-xs-3 col-sm-auto col-form-label">Full text search:</label>
@@ -27,7 +28,11 @@
         <td> <img src="{{character.image}}" alt=""> {{ character.name }} </td>
         <td> {{ character.status }} </td>
         <td> {{ character.species }}</td>
-        <td> <button type="button" class="btn btn-dark"> + View More</button> </td>
+        <td>
+          <a routerLink="/character/{{character.id}}" type="button" class="btn btn-dark">
+            <span>+ View More</span>
+          </a>
+        </td>
       </tr>
     </tbody>
   </table>
