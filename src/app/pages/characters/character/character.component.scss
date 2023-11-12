@@ -1,0 +1,32 @@
+.character {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.head-card {
+  gap: 4rem;
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+  }
+}
+
+.body-card {
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+  h3 {
+    font-weight: 900;
+  }
+  .informations {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+}
+
+
+

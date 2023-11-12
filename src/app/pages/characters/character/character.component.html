@@ -1,0 +1,55 @@
+<div class="character pt-2">
+  <div class="head-card d-flex align-items-center justify-content-center flex-row pt-4">
+    <img class="w-25 rounded-circle" src={{character.image}} alt="" srcset="">
+    <h1 class="mr-5 title"> {{ character.name }} </h1>
+  </div>
+  <div class="body-card">
+    <h3 class="pt-5"> Informations </h3>
+    <div class="informations">
+      <app-information
+        info="Status:"
+        [result]="character.status">
+      </app-information>
+      <app-information
+        info="Species:"
+        [result]="character.species">
+      </app-information>
+      <app-information
+        info="Type:"
+        [result]="character.type">
+      </app-information>
+      <app-information
+        info="Gender:"
+        [result]="character.gender">
+      </app-information>
+      <app-information
+        info="Origin name:"
+        [result]="character.origin.name">
+      </app-information>
+      <app-information
+        info="Origin URL:"
+        [result]="character.origin.url">
+      </app-information>
+      <app-information
+        info="Location name:"
+        [result]="character.location.name">
+      </app-information>
+      <app-information
+        info="Location URL:"
+        [result]="character.location.url">
+      </app-information>
+      <app-information
+        info="Episodes:"
+        [result]="character.episode">
+      </app-information>
+      <app-information
+        info="URL:"
+        [result]="character.url">
+      </app-information>
+      <app-information
+        info="Created:"
+        [result]="character.created">
+      </app-information>
+    </div>
+  </div>
+</div>

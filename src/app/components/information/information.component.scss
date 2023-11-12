@@ -1,0 +1,13 @@
+.information {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 10rem;
+  max-width: 20rem;
+
+
+  .info {
+    font-weight: 600;
+  }
+
+}

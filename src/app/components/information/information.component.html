@@ -1,0 +1,10 @@
+<div class="information">
+  <div class="info">
+    {{ info }}
+  </div>
+  <div class="result">
+    <div *ngIf="info != 'Episodes:'; then thenBlock else elseBlock"></div>
+      <ng-template #thenBlock> {{ result }} </ng-template>
+      <ng-template #elseBlock> Episodes </ng-template>
+  </div>
+</div>
