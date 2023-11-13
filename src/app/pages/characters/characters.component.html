@@ -4,26 +4,26 @@
     <form class="w-100">
       <label for="table-complete-search" class="col-xs-3 col-sm-auto col-form-label text-white">Full text search:</label>
       <input
+        name="search"
         type="text"
         class="form-control"
         name="searchTerm"
         placeholder="Search"
-        (input)="search($event)"/>
+        (input)="filterBySearch($event)"/>
+
+        <select name="filterByStatus"(change)="filterByStatus($event)"  class="row mx-3 mt-4 w-25 d-inline-block form-select btn btn-outline-primary" aria-label="Filter by Status">
+          <option value="0" selected>Filter by Status</option>
+          <option value="Alive">Alive</option>
+          <option value="Dead">Dead</option>
+          <option value="unknown">unknown</option>
+        </select>
+
+        <select name="filterBySpecie" (change)="filterBySpecie($event)" class="row mx-3 mt-4 w-25 d-inline-block form-select btn btn-outline-primary" aria-label="Filter by Status">
+          <option value="0"selected>Filter by Specie</option>
+          <option value="Human">Human</option>
+          <option value="Alien">Alien</option>
+        </select>
     </form>
-
-    <select class="row mx-3 mt-4 w-25 d-inline-block form-select btn btn-outline-primary" aria-label="Filter by Status">
-      <option value="0" selected>Filter by Status</option>
-      <option value="Alive">Alive</option>
-      <option value="Dead">Dead</option>
-      <option value="unknown">unknown</option>
-    </select>
-
-    <select (change)="filterBySpecie($event)" class="row mx-3 mt-4 w-25 d-inline-block form-select btn btn-outline-primary" aria-label="Filter by Status">
-      <option value="0"selected>Filter by Specie</option>
-      <option value="Human">Human</option>
-      <option value="Alien">Alien</option>
-    </select>
-
   </div>
   <div class="characters mx-4 table-responsive">
     <table class="table table-hover text-center">
@@ -51,5 +51,9 @@
       </tbody>
     </table>
   </div>
+  <div class="mt-2 mx-4">
+    <p class="text-white text-end"> {{ characters.length }} results </p>
+  </div>
+
 </div>
 
