@@ -2,13 +2,40 @@
 
 Hello! Welcome to my project! This project is a SPA with API Consumer generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
+You can see the project running [HERE](https://master.d3bl0tj8j08cqq.amplifyapp.com/)!
+
 ### TOOLS 🔨
 - Angular 15.0.4
 - SCSS with SASS
 - Bootstrap 5.3.2
 - Boostrap Icons 1.11.1
 - Ng-Boostrap 14.2.0
+- AWS Amplify
 
+### FEATURES
+- [x] Character Page
+   - Filter by name
+   - Filter by status
+   - Filter by specie
+   - Single page with more informations
+- [ ] Location Page
+- [ ] Episode Page
+
+### TO FIX / TO FEAT
+- In the Character Page:
+  - Treat field "Episodes"
+  - Treat field "Created:"
+  - Treat field "Location URL"
+  - Button "to back"
+  - Active URL '/' (bug)
+- In the Location Page
+  - Connect to endpoint
+  - Create visualization table
+  - Create filters
+- In the Episode Page
+  - Connect to endpoint
+  - Create visualization table
+  - Create filters
 
 ## Development server
 
