@@ -1,6 +1,14 @@
 # SpaRickMorty
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Hello! Welcome to my project! This project is a SPA with API Consumer generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+
+### TOOLS 🔨
+- Angular 15.0.4
+- SCSS with SASS
+- Bootstrap 5.3.2
+- Boostrap Icons 1.11.1
+- Ng-Boostrap 14.2.0
+
 
 ## Development server
 
