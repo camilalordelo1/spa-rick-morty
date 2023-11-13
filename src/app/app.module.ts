@@ -10,6 +10,7 @@ import { CharacterComponent } from './pages/characters/character/character.compo
 import { InformationComponent } from './components/information/information.component';
 import { LocationsComponent } from './pages/locations/locations.component';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
+import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { EpisodesComponent } from './pages/episodes/episodes.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule,
+    NgbDropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

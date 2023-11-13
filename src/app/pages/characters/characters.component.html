@@ -10,6 +10,20 @@
         placeholder="Search"
         (input)="search($event)"/>
     </form>
+
+    <select class="row mx-3 mt-4 w-25 d-inline-block form-select btn btn-outline-primary" aria-label="Filter by Status">
+      <option value="0" selected>Filter by Status</option>
+      <option value="Alive">Alive</option>
+      <option value="Dead">Dead</option>
+      <option value="unknown">unknown</option>
+    </select>
+
+    <select (change)="filterBySpecie($event)" class="row mx-3 mt-4 w-25 d-inline-block form-select btn btn-outline-primary" aria-label="Filter by Status">
+      <option value="0"selected>Filter by Specie</option>
+      <option value="Human">Human</option>
+      <option value="Alien">Alien</option>
+    </select>
+
   </div>
   <div class="characters mx-4 table-responsive">
     <table class="table table-hover text-center">

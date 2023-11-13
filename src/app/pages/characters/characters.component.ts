@@ -30,4 +30,21 @@ export class CharactersComponent implements OnInit {
       return character.name.toLowerCase().includes(value)
     });
   }
+
+  filterBySpecie(e: Event): void {
+    const target = e.target as HTMLInputElement;
+    const value = target.value;
+
+    if(value != '0'){
+      this.characters = this.allCharacters.filter((character) => {
+        return character.species.includes(value)
+      });
+    } else {
+      this.characters = this.allCharacters;
+    }
+  }
+
+  filterByStatus(e: Event): void {
+
+  }
 }
