@@ -3,10 +3,12 @@
 .app {
   width: 99vw;
   height: 100vh;
+  background-color: $primary-color;
 }
 
 .nav-bar {
-  border-radius: 20px;
+  border-radius: 0rem 0rem 2rem 0rem;
+  background-color: white;
   color: $primary-color;
   h3 {
     color: $primary-color;
