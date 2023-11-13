@@ -4,11 +4,11 @@
   max-height: 100%;
   max-width: 100%;
   svg {
-    margin-left: -10px;
-    width: calc(84% + 10px);
+    width: 84%;
     transform: rotate(180deg);
     position: absolute;
     top: 0;
+    opacity: 0.2;
   }
 }
 
