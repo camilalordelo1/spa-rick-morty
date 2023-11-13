@@ -22,6 +22,8 @@ You can see the project running [HERE](https://master.d3bl0tj8j08cqq.amplifyapp.
 - [ ] Episode Page
 
 ### TO FIX / TO FEAT
+- ALL
+  - responsiveness
 - In the Character Page:
   - Treat field "Episodes"
   - Treat field "Created:"
