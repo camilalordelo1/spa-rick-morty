@@ -4,7 +4,8 @@
   max-height: 100%;
   max-width: 100%;
   svg {
-    width: 84%;
+    margin-left: -10px;
+    width: calc(84% + 10px);
     transform: rotate(180deg);
     position: absolute;
     top: 0;

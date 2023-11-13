@@ -6,8 +6,8 @@
 }
 
 .nav-bar {
+  border-radius: 20px;
   color: $primary-color;
-
   h3 {
     color: $primary-color;
     font-weight: 900;
@@ -15,6 +15,11 @@
   a {
     color: $primary-color;
     font-weight: 400;
+
+    i {
+      color: $primary-color;
+      margin-right: 0.5rem;
+    }
   }
 }
 
