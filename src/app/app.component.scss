@@ -12,13 +12,26 @@
     color: $primary-color;
     font-weight: 900;
   }
-  a {
-    color: $primary-color;
-    font-weight: 400;
+  li {
+    list-style-type: none;
+    border-radius: 10px;
 
-    i {
+    a {
       color: $primary-color;
-      margin-right: 0.5rem;
+      font-weight: 400;
+      border-radius: 10px;
+      padding: 1rem 1rem;
+      display: flex;
+      justify-content: center;
+
+      &:hover{
+        background-color: $tertiary-color;
+      }
+
+      i {
+        color: $primary-color;
+        margin-right: 0.5rem;
+      }
     }
   }
 }
@@ -29,4 +42,8 @@
   margin: 0;
   padding: 0;
 
+}
+
+.active {
+  background-color: $tertiary-color;
 }

@@ -3,9 +3,15 @@
     <div class="nav-bar col-2">
       <h3 class="text-center pt-5">Dashboard</h3>
         <nav class="pt-5 px-4 flex-column text-white">
+          <li [routerLinkActive]="'active'">
             <a class="nav-link mb-3" routerLink="/characters"><i class="bi bi-people-fill"></i> Character</a>
-            <a class="nav-link mb-3" routerLink="/location"><i class="bi bi-geo-alt-fill"></i> Location</a>
-            <a class="nav-link mb-3" routerLink="/episode"><i class="bi bi-film"></i> Episode</a>
+          </li>
+          <li [routerLinkActive]="'active'">
+            <a class="nav-link mb-3" routerLink="/locations"><i class="bi bi-geo-alt-fill"></i> Location</a>
+          </li>
+          <li [routerLinkActive]="'active'">
+            <a class="nav-link mb-3" routerLink="/episodes"><i class="bi bi-film"></i> Episode</a>
+          </li>
         </nav>
     </div>
     <div class="dash col-10">

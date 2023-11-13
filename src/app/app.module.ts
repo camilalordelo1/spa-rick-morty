@@ -8,13 +8,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { CharacterComponent } from './pages/characters/character/character.component';
 import { InformationComponent } from './components/information/information.component';
+import { LocationsComponent } from './pages/locations/locations.component';
+import { EpisodesComponent } from './pages/episodes/episodes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CharacterComponent,
     CharactersComponent,
-    InformationComponent
+    InformationComponent,
+    LocationsComponent,
+    EpisodesComponent
   ],
   imports: [
     BrowserModule,
