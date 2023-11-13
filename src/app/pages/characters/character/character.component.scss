@@ -1,30 +1,55 @@
+@import './../../../styles/variables.scss';
+
 .character {
-  max-height: 100vh;
-  overflow-y: auto;
+  max-height: 100%;
+  max-width: 100%;
+  svg {
+    width: 84%;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
 }
 
 .head-card {
   gap: 4rem;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  position: relative;
   h1 {
     font-size: 4.5rem;
     font-weight: 900;
+    color: white;
+    padding: 1rem 2rem;
+    background-color: $secondary-color;
+    border-radius: 1rem;
+  }
+
+  img {
+    width: 15%;
   }
 }
 
 .body-card {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding: 2rem 2rem;
+
 
   h3 {
     font-weight: 900;
   }
   .informations {
-    gap: 2rem;
+    width: 100%;
+    gap: 1rem;
+    row-gap: 1rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    color: white;
   }
 }
 

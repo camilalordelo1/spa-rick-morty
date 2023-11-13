@@ -1,5 +1,27 @@
 @import './styles/variables.scss';
 
-h3 {
-  color: white;
+.app {
+  width: 99vw;
+  height: 100vh;
+}
+
+.nav-bar {
+  color: $primary-color;
+
+  h3 {
+    color: $primary-color;
+    font-weight: 900;
+  }
+  a {
+    color: $primary-color;
+    font-weight: 400;
+  }
+}
+
+.dash {
+  background-color: $primary-color;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
 }

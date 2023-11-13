@@ -4,8 +4,8 @@ $font-family-base: 'Roboto', sans-serif;
 
 html, body {
   font-family: $font-family-base !important;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  height: 100vh;
-}
+

@@ -1,13 +1,24 @@
+@import './../../styles/variables.scss';
+
 .information {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  min-width: 10rem;
-  max-width: 20rem;
-
+  text-align: center;
+  min-width: 20vw;
+  height: auto;
 
   .info {
+    padding: 0.2rem;
     font-weight: 600;
+    background-color: white;
+    color: $secondary-color;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .result {
+    background-color: $secondary-color;
+    padding: 0.3rem 3rem;
+    border-radius: 0px 0px 10px 10px;
   }
 
 }
