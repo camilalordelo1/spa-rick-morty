@@ -5,7 +5,7 @@
   <div class="result">
     <div *ngIf="info != 'Episodes:'; then thenBlock else elseBlock"></div>
       <ng-template #thenBlock> {{ result }} </ng-template>
-      <ng-template #elseBlock> Episodes </ng-template>
+      <ng-template #elseBlock> Construction </ng-template>
     <div *ngIf="result == ''; then thenBlock2"></div>
     <ng-template #thenBlock2> Does not have </ng-template>
   </div>
