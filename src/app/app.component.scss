@@ -40,7 +40,7 @@
 
 .dash {
   background-color: $primary-color;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 
@@ -56,5 +56,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 4fr;
+
+    .nav-bar {
+      padding-bottom: 0;
+    }
   }
 }
