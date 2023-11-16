@@ -34,3 +34,9 @@ img {
 
   }
 }
+
+@media (max-width: 600px) {
+  select {
+    min-width: 90%;
+  }
+}
