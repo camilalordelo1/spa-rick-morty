@@ -9,7 +9,10 @@ html, body {
   padding: 0;
 }
 
-
+body {
+  min-height: 100vh;
+  max-width: 100%;
+}
 
 
 /* Importing Bootstrap SCSS file. */

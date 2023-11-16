@@ -1,6 +1,5 @@
 <div class="app">
-  <div class="row">
-    <div class="nav-bar col-2">
+    <div class="nav-bar">
       <h3 class="text-center pt-5">Dashboard</h3>
         <nav class="pt-5 px-4 flex-column text-white">
           <li [routerLinkActive]="'active'">
@@ -14,9 +13,8 @@
           </li>
         </nav>
     </div>
-    <div class="dash col-10">
+    <div class="dash">
       <router-outlet></router-outlet>
     </div>
-  </div>
 </div>
 

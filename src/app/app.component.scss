@@ -1,9 +1,9 @@
 @import './styles/variables.scss';
 
 .app {
-  width: 99vw;
-  height: 100vh;
   background-color: $primary-color;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 .nav-bar {
@@ -48,4 +48,8 @@
 
 .active {
   background-color: $tertiary-color;
+}
+
+@media (max-width: 600px) {
+
 }
